@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css"> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Location Search</title>
+    
+    </head>
+
+
+
+    <body>
+            <div class ="heading"><h1>Zomato Location Search</h1></div>
+            <!--<div><h1>Zomato Location Search</h1></div>-->
+            <br><br>
+        
+            <div class="container" id="main">
+                
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" placeholder="Search" id="searchbar">
+                    <div class="input-group-append">
+                        <button class ="btn btn-primary" type="button" onclick="Search()" title="Search Location">Search</button>
+                    </div>
+                    
+                    
+                </div>
+                <div id="result"></div>
+                
+                
+                <div class="card-group ml-4 mr-4 col-l-3  justify-content-center    " id="card_group">
+                         <!--<div class="card text-white bg-secondary mt-3 mr-3 ml-3" style="width: 25rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                         </div>-->
+                       <!-- <div>
+                            <div class="card bg-primary mt-3 mr-3 ml-3" style="width: 20rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title center2">Hammana, Baabda District</h5><br>
+                                    <ul class="list-group" style="background-color: #3c3d47">
+                                        <li class="list-group-item"><strong>City:</strong> Beirut</li>
+                                        <li class="list-group-item"><strong>Country:</strong> Lebanon</li>
+                                        <li class="list-group-item"><strong>Latitude:</strong> 33.822343</li>
+                                        <li class="list-group-item"><strong>Longitude:</strong> 35.733392</li>
+                                        <li class="list-group-item"><strong>Location Type:</strong> Group</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card bg-secondary mt-3 mr-3 ml-3" style="width: 20rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title center2">Hammana, Baabda District</h5><br>
+                                    <ul class="list-group" style="background-color: #3c3d47">
+                                        <li class="list-group-item"><strong>City:</strong> Beirut</li>
+                                        <li class="list-group-item"><strong>Country:</strong> Lebanon</li>
+                                        <li class="list-group-item"><strong>Latitude:</strong> 33.822343</li>
+                                        <li class="list-group-item"><strong>Longitude:</strong> 35.733392</li>
+                                        <li class="list-group-item"><strong>Location Type:</strong> Group</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card bg-success mt-3 mr-3 ml-3" style="width: 20rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title center2">Hammana, Baabda District</h5><br>
+                                    <ul class="list-group" style="background-color: #3c3d47">
+                                        <li class="list-group-item"><strong>City:</strong> Beirut</li>
+                                        <li class="list-group-item"><strong>Country:</strong> Lebanon</li>
+                                        <li class="list-group-item"><strong>Latitude:</strong> 33.822343</li>
+                                        <li class="list-group-item"><strong>Longitude:</strong> 35.733392</li>
+                                        <li class="list-group-item"><strong>Location Type:</strong> Group</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card bg-danger mt-3 mr-3 ml-3" style="width: 20rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title center2">Hammana, Baabda District</h5><br>
+                                    <ul class="list-group" style="background-color: #3c3d47">
+                                        <li class="list-group-item"><strong>City:</strong> Beirut</li>
+                                        <li class="list-group-item"><strong>Country:</strong> Lebanon</li>
+                                        <li class="list-group-item"><strong>Latitude:</strong> 33.822343</li>
+                                        <li class="list-group-item"><strong>Longitude:</strong> 35.733392</li>
+                                        <li class="list-group-item"><strong>Location Type:</strong> Group</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card bg-warning mt-3 mr-3 ml-3" style="width: 20rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title center2">Hammana, Baabda District</h5><br>
+                                    <ul class="list-group" style="background-color: #3c3d47">
+                                        <li class="list-group-item"><strong>City:</strong> Beirut</li>
+                                        <li class="list-group-item"><strong>Country:</strong> Lebanon</li>
+                                        <li class="list-group-item"><strong>Latitude:</strong> 33.822343</li>
+                                        <li class="list-group-item"><strong>Longitude:</strong> 35.733392</li>
+                                        <li class="list-group-item"><strong>Location Type:</strong> Group</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        
+                            
+                         
+                    
+                    
+                    
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        <script src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+    </body>
+
+
+
+
+</html>
